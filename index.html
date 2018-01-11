@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>BTime Sign In / Sign Up</title>
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase-firestore.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <section class="container">
+		<article class="half">
+			<h1>BTime</h1>
+			    <div class="tabs">
+				    <span class="tab signin active"><a href="#signin">Sign in</a></span>
+				    <span class="tab signup"><a href="#signup">Sign up</a></span>
+			    </div>
+			    <div class="content">
+					<div class="signin-cont cont">
+						<form id="form_signin" name="form_signin" action="#" method="post" enctype="multipart/form-data">
+							<input type="email" name="email_signin" id="email_signin" class="inpt" required="required" placeholder="Your email">
+						    <label for="email">Your email</label>
+						    <input type="password" name="password_signin" id="password_signin" class="inpt" required="required" placeholder="Your password">
+                			<label for="password">Your password</label>
+							<div class="submit-wrap">
+								<input type="submit" value="Sign in" class="submit" id="btnSignIn">
+								<a href="#" class="more">Forgot your password?</a>
+							</div>
+        				</form>
+    				</div>
+    				<div class="signup-cont cont">
+                		<form id="form_signup" name="form_signup" action="" method="post" enctype="multipart/form-data">
+							<input type="name" name="name_signup" id="name_signup" class="inpt" required="required" placeholder="Your name">
+						    <label for="name">Your name</label>
+                    		<input type="email" name="email_signup" id="email_signup" class="inpt" required="required" placeholder="Your email">
+						    <label for="email">Your email</label>
+						    <input type="password" name="password_signup" id="password_signup" class="inpt" required="required" placeholder="Your password">
+                			<label for="password">Your password</label>
+						    <div class="submit-wrap">
+								<input type="submit" value="Sign up" class="submit" id="btnSignUp">
+							    <a href="#" class="more">Terms and conditions</a>
+						    </div>
+        				</form>
+            		</div>
+			    </div>
+		</article>
+		    <div class="half bg"></div>
+	</section>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+	<script  src="js/index.js"></script>
+	<script  src="js/cad.js"></script>
+
+</body>
+</html>

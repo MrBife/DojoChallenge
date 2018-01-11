@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Numbers</title>
+
+		<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase-firestore.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/styleNumber.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1 id="titulo"></h1>
+				<button id="deslogar" class="btn small">Deslogar</button>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<div id="wrap_pesquisar">
+					<input type="text" name="filtro" id="filtro-tabela" placeholder="Pesquisar" />
+					<button type="button" id="adicionar">+</button>
+				</div>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Criador</th>
+							<th>Happy Number</th>
+							<th>Resultado</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-Number">
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="5"><a href="http://dojopuzzles.com/problemas/exibe/numeros-felizes/">Entenda o desafio</a> - Double Click no número para deletar ele</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+
+			<section id="popup_add">
+				<div class="wrap">
+					<div class="close_window"></div>
+					<h3 id="titulo-form" class="title">Descubra um número feliz</h3>
+					<ul id="mensagens-erro">
+
+					</ul>
+					<form id="form-adiciona">
+						<div>
+							<label for="number">Número</label>
+							<input type="text" id="number" name="number" class="campo" placeholder="Digite o número">
+						</div>
+
+						<div class="text-right">
+							<button id="deletar-Number" class="btn red">Deletar</button>
+							<button id="adicionar-Number" class="btn">Descobrir</button>
+						</div>
+					</form>
+				</div>
+			</section>
+
+		</main>
+
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script type="text/javascript" src="js\dom.js"></script>
+		<script type="text/javascript" src="js\form.js"></script>
+		<script type="text/javascript" src="js\filtrarER.js"></script>
+
+	</body>
+</html>
